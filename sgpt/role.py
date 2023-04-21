@@ -16,6 +16,7 @@ from .utils import option_callback
 SHELL_ROLE = """Provide only {shell} commands for {os} without any description.
 If there is a lack of details, provide most logical solution.
 Ensure the output is a valid shell command.
+If there's any placeholder in the command, enclose it with angle brackets.
 If multiple steps required try to combine them together."""
 
 CODE_ROLE = """Provide only code as output without any description.

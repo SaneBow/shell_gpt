@@ -165,7 +165,7 @@ def main(
         )
 
     if shell and not stdin_passed and typer.confirm("Execute shell command?"):
-        run_command(full_completion)
+        run_command(full_completion, ask_inputs=True)
 
 
 def entry_point() -> None:
